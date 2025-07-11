@@ -1,10 +1,12 @@
 import type { NextConfig } from "next";
-import withNextIntl from 'next-intl/plugin';
-
-const withNextIntlConfig = withNextIntl('./src/i18n.ts');
 
 const nextConfig: NextConfig = {
   /* config options here */
+  env: {
+    ...require('dotenv').config({ path: require('path').resolve(__dirname, '../../Docker/.env') }).parsed,
+  },
 };
 
-export default withNextIntlConfig(nextConfig);
+const withNextIntl = require('next-intl/plugin')('./src/i18n.ts');
+
+export default withNextIntl(nextConfig);

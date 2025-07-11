@@ -2,6 +2,7 @@
 
 import { Button } from '@/components/ui/button';
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from '@/components/ui/dialog';
+import { signIn } from 'next-auth/react';
 
 function GoogleIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
@@ -25,12 +26,15 @@ export default function LoginModal() {
       <DialogTrigger asChild>
         <Button variant="outline">Iniciar Sesión</Button>
       </DialogTrigger>
-      <DialogContent className="sm:max-w-[425px] bg-gray-800 border-gray-700 text-white">
+      <DialogContent className="sm:max-w-[425px] bg-gray-800 border-gray-700 text-gray-700">
         <DialogHeader>
           <DialogTitle>Iniciar Sesión</DialogTitle>
         </DialogHeader>
         <div className="grid gap-4 py-4">
-          <Button variant="outline" className="w-full justify-center gap-2 bg-gray-700 hover:bg-gray-600">
+          <Button
+            variant="outline"
+            className="w-full justify-center gap-2 bg-gray-700 hover:bg-gray-600"
+            onClick={() => signIn('google')}>
             <GoogleIcon className="h-5 w-5" />
             Iniciar Sesión con Google
           </Button>

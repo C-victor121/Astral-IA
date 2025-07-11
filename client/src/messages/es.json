@@ -1,0 +1,71 @@
+{
+  "Index": {
+    "title": "Bienvenido a AstralIA",
+    "hero": {
+      "title": "Bienvenido a Witchcraft",
+      "subtitle": "Lorem ipsum dolor sit amet, consectetuer Lorem ipsum dolor sit amet, consectetuer. Lorem ipsum dolor sit amet, consectetuer Lorem ipsum dolor.",
+      "cta": "Agendar una Lectura"
+    },
+    "help": {
+      "title": "Podemos Ayudarte a Encontrar Tu Futuro con Witchcraft",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.",
+      "cta": "Aprender Más"
+    },
+    "readings": {
+      "title": "Lecturas Psíquicas",
+      "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.",
+      "cta": "Agendar una Lectura Ahora"
+    },
+    "membership": {
+      "member": {
+        "title": "Conviértete en Miembro",
+        "description": "Obtén acceso a contenido exclusivo y lecturas con descuento.",
+        "cta": "Aprender Más"
+      },
+      "learningCenter": {
+        "title": "Centro de Aprendizaje",
+        "description": "Explora nuestros artículos y guías para expandir tus conocimientos.",
+        "cta": "Échale un Vistazo"
+      }
+    },
+    "signs": {
+      "title": "Conócete a ti mismo a través de tu signo"
+    },
+    "testimonials": {
+      "title": "Lo que dicen mis clientes"
+    },
+    "subscribe": {
+      "title": "Suscríbete y pregunta gratis",
+      "subtitle": "Recibe actualizaciones y ofertas especiales directamente en tu bandeja de entrada.",
+      "placeholder": "Tu Email",
+      "cta": "Suscribirse"
+    }
+  },
+  "Footer": {
+    "quickLinks": {
+      "title": "Enlaces Rápidos",
+      "about": "Sobre Nosotros",
+      "readings": "Lecturas",
+      "contact": "Contacto"
+    },
+    "address": {
+      "title": "Dirección"
+    },
+    "contact": {
+      "title": "Contacto"
+    },
+    "followUs": {
+      "title": "Síguenos"
+    },
+    "copyright": "Cosmic Connections 2023. Todos los derechos reservados."
+  },
+  "Navbar": {
+    "home": "Inicio",
+    "readings": "Lecturas",
+    "psychics": "Psíquicos",
+    "learningCenter": "Centro de Aprendizaje",
+    "faq": "Preguntas Frecuentes",
+    "contact": "Contáctanos",
+    "login": "Iniciar Sesión"
+  }
+}

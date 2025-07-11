@@ -10,7 +10,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
   const { locale } = await params;
   
   // Carga el JSON de traducciones correspondiente
-  const messages = (await import(`../../../messages/${locale}.json`)).default;
+  const messages = (await import(`@/messages/${locale}.json`)).default;
   
   return (
     <html lang={locale}>

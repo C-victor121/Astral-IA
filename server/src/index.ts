@@ -2,7 +2,8 @@ import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 
-dotenv.config();
+
+dotenv.config({ path: '../../Docker/.env' });
 
 const app = express();
 const PORT = process.env.PORT || 3000;

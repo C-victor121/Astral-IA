@@ -10,7 +10,7 @@ export default function Hero() {
     <section
       id="hero"
       className="py-20 md:py-32 bg-cover bg-center"
-      style={{ backgroundImage: "url('/galaxy-background.jpg')" }}
+      style={{ backgroundImage: "url('/galaxy-background.jpeg')" }}
     >
       <div className="container mx-auto text-center">
         <h2 className="text-4xl md:text-6xl font-bold mb-4">{t('title')}</h2>

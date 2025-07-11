@@ -1,6 +1,7 @@
 'use client';
 
 import { NextIntlClientProvider } from 'next-intl';
+import { SessionProvider } from 'next-auth/react';
 import { ReactNode } from 'react';
 
 interface Props {
@@ -11,8 +12,10 @@ interface Props {
 
 export default function Providers({ children, locale, messages }: Props) {
   return (
-    <NextIntlClientProvider locale={locale} messages={messages}>
-      {children}
-    </NextIntlClientProvider>
+    <SessionProvider>
+      <NextIntlClientProvider locale={locale} messages={messages}>
+        {children}
+      </NextIntlClientProvider>
+    </SessionProvider>
   );
 }
