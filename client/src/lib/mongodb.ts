@@ -1,10 +1,11 @@
 import { MongoClient } from 'mongodb';
 
-if (!process.env.MONGODB_URI) {
-  throw new Error('Invalid/Missing environment variable: "MONGODB_URI"');
+// Durante el build, MONGODB_URI puede no estar disponible
+if (!process.env.MONGODB_URI && process.env.NODE_ENV !== 'development') {
+  console.warn('MONGODB_URI not found, using fallback for build process');
 }
 
-const uri = process.env.MONGODB_URI;
+const uri = process.env.MONGODB_URI || 'mongodb://astral_user:astral_password@mongodb:27017/astral_db';
 const options = {};
 
 let client;
@@ -13,7 +14,7 @@ let clientPromise: Promise<MongoClient>;
 if (process.env.NODE_ENV === 'development') {
   // En modo de desarrollo, usa una variable global para que el valor
   // se conserve entre recargas de módulos causadas por HMR (Hot Module Replacement).
-  let globalWithMongo = global as typeof globalThis & {
+  const globalWithMongo = global as typeof globalThis & {
     _mongoClientPromise?: Promise<MongoClient>
   }
 
